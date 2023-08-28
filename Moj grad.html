@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Moja stranica</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+
+</head>
+<body>
+
+  <!---------------------------------Navbar----------------------------------->
+
+  <header>
+    <div class="menu">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar">
+      <ul class="nav justify-content-center">
+        <li><a href="index.html" >Naslovna</a></li>
+        |<li><a href="#" class="active">Moj grad</a></li>
+        |<li><a href="O meni.html">O meni</a></li>
+        |<li><a href="Galerija.html">Galerija</a></li>
+        |<li><a href="Kontakt.php">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>
+  <!---------------------------------Navbar----------------------------------->
+
+    <div class="container">
+        <div class="row text-white text-center">
+          <div class="col-sm-4">
+            <h3><button onclick="togglePopup()" style="border: none; background: none; color: white;">
+              <span class="text">Općenito</span></button>
+            </h3>
+            <span class="line"></span><br><br>
+            <li>smješten u istočnoj Hrvatskoj</li>
+            <li>najveći grad u Slavoniji</li>
+            <li>nalazi se na desnoj obali rijeke Drave</li>
+          </div>
+          <div class="col-sm-4">
+            <h3><a href="https://www.tzosijek.hr/znamenitosti-57" target="_blank">Znamenitosti</a></h3>
+            <span class="line"></span><br><br>
+            <li>Gradske zidine i vodena vrata</li>
+            <li>Konkatedrala sv. Petra i Pavla</li>
+            <li>Trg svetog Trojstva</li>
+            <li>General vojarna</li>
+          </div>
+          <div class="col-sm-4">
+            <h3><a href="https://www.osijek.hr/kultura/nobelovci-i-osjecki-velikani/" target="_blank">Poznate osobe</a></h3>
+            <span class="line"></span><br><br>
+            <li>Vladimir Prelog, Lavoslav Ružička</li>
+            <li>Franjo Krežma, Franjo Kuhač, Dora Pejačević</li>
+            <li>Matija Petar Katančić, Dobriša Cesarić, Jagoda Truhelka, Anto Gardaš</li>
+          </div>
+          <div class="col-sm">
+            <h3><a href="https://www.klikcup.com/hr/restorani/hrvatska/osijek" target="_blank">Restorani</a></h3>
+            <span class="line"></span><br><br>
+            <li>Karaka</li>
+            <li>Rustika</li>
+            <li>El Paso</li>
+            <li>Slavonska kuća</li>
+          </div>
+          <div class="col-sm">
+            <h3><button onclick="togglePopupS()" style="border: none; background: none; color: white;">
+              <span class="text">Slastičarnice</span></button>
+            </h3>
+            <span class="line"></span><br><br>
+            <li>Petar Pan</li>
+            <li>Mr. Činkos</li>
+            <li>Gold by Waldinger</li>
+            <li>Slatka tvornica</li>
+          </div>
+          <div class="col-sm">
+            <h3><a href="https://centrumosijek.hr/sto-posjetiti/" target="_blank">Zanimljiva mjesta</a></h3>
+            <span class="line"></span><br><br>
+            <li>Zoo vrt Osijek</li>
+            <li>Muzej Slavonije</li>
+            <li>Parkovi i perivoji</li>
+            <li>Crveni fićo</li>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="popup" id="popup-1">
+        <div class="overlay">
+          <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Općenito</h1>
+            <p>Osijek je grad u istočnoj Hrvatskoj. Smješten je u ravnici na desnoj obali rijeke Drave između 16. i 24. kilometra od ušća u Dunav.
+              Najveći je grad u Slavoniji, četvrti po veličini grad u Hrvatskoj, te je industrijsko, upravno, akademsko, sudsko i kulturno središte Osječko-baranjske županije.
+            <a href="https://hr.wikipedia.org/wiki/Osijek" target="_blank">Više</a></p>
+            <table style="width:50%; border:1px solid black;">
+              <tr>
+                <td>Država</td>
+                <td>Hrvatska</td>
+              </tr>
+              <tr>
+                <td>Županija</td>
+                <td>Osječko-baranjska</td>
+              </tr>
+              <tr>
+                <td>Stanovništvo (2021.)</td>
+                <td>oko 97 000</td>
+              </tr>
+              <tr>
+                <td>Gradonačelnik</td>
+                <td>Ivan Radić</td>
+              </tr>
+              <tr>
+                <td>Poštanski broj</td>
+                <td>31000</td>
+              </tr>
+            </table>
+          
+            <img src="slike/carte.png" alt="" class="img1">
+            <a href="https://www.google.com/maps/place/Osijek/@45.5462462,18.5487755,11z/data=!3m1!4b1!4m5!3m4!1s0x475ce7a869728075:0x5b8c725621a41195!8m2!3d45.5549624!4d18.6955144?hl=hr" style="text-decoration: none;" target="_blank">Karta</a>
+
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="popup" id="popup-2">
+        <div class="overlay">
+          <div class="content" style="width: 720px;">
+            <div class="close-btn" onclick="togglePopupS()">&times;</div>
+            <h1 style="width: 100%; text-align: center;">Slastičarnice</h1>
+            <ul>
+              <li>Petar Pan</li>
+              <li>Mr. Činkos <a href="https://www.facebook.com/mr.cink0s/" target="_blank">Više</a></li>
+              <li>Gold by Waldinger <a href="https://gold.waldinger.hr/" target="_blank">Više</a></li>
+              <li>Slatka tvornica <a href="https://slatkatvornica.hr/" target="_blank">Više</a></li>
+              <li>Sunčana</li>
+              <li>FRATELLI</li>
+              <li>Rocher crepe&wrap&burger</li>
+            </ul>
+            <img src="slike/slasticarnica.jpg" alt="" class="img2">
+            </div>
+        </div>
+      </div>
+
+
+    <!----------------------------------Footer------------------------------------>
+
+    <footer>
+      <h2>MOJA STRANICA. All Rights Reserved ©&nbsp;<h2 id="date"></h2></h2>
+    </footer>
+
+    <!----------------------------------Footer------------------------------------>
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="funkcije.js"></script>
+
+</body>
+</html>
